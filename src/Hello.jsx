@@ -4,7 +4,7 @@ class Hello extends Component {
   render() {
     return (
       <div>
-        <h3>Hello world!</h3>
+        <h3>Hello webpack!</h3>
       </div>
     );
   }
