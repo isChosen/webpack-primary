@@ -2,11 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development', // development production
+  mode: 'development',
   entry: './src/index.jsx', // 入口， 可以有多个
   output: {
-    filename: '[name].bundle.js',
-    chunkFilename: '[name].[chunkhash:6].js',
+    filename: '[name].bundle[hash:6].js',
+    chunkFilename: '[name][chunkhash:6].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
